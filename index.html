@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حاسبة المعدل الذكية</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">الحاسبة</a></li>
+        <li><a href="instructions.html">الإرشادات</a></li>
+        <li><a href="about.html">حول البرنامج</a></li>
+      </ul>
+    </nav>
+    <h1>حاسبة المعدل الذكية ✨</h1>
+  </header>
+
+  <div class="news-bar" id="news-bar">
+    🌟 النجاح يبدأ بخطوة صغيرة! 🚀 استمر في السعي نحو التميز!
+  </div>
+
+  <div class="container">
+    <!-- السنة الأولى -->
+    <div class="card">
+      <h2>📘 مواد السنة الأولى (35 درجة)</h2>
+      <label>أنظمة تكنولوجيا المعلومات</label>
+      <input type="text" id="f1" placeholder="P / M / D أو نسبة %">
+      <label>تطوير المواقع الإلكترونية</label>
+      <input type="text" id="f2" placeholder="P / M / D أو نسبة %">
+      <label>تطوير تطبيقات الهاتف المحمول</label>
+      <input type="text" id="f3" placeholder="P / M / D أو نسبة %">
+      <label>الدعم الفني والإدارة</label>
+      <input type="text" id="f4" placeholder="P / M / D أو نسبة %">
+      <label>تطوير ألعاب الحاسوب</label>
+      <input type="text" id="f5" placeholder="P / M / D أو نسبة %">
+      <button onclick="calculateFirst()">احسب معدل السنة الأولى</button>
+      <div id="outputFirst" class="result"></div>
+    </div>
+
+    <!-- السنة الثانية -->
+    <div class="card">
+      <h2>📗 مواد السنة الثانية (35 درجة)</h2>
+      <label>الأمن السيبراني</label>
+      <input type="text" id="s1" placeholder="P / M / D أو نسبة %">
+      <label>البرمجة</label>
+      <input type="text" id="s2" placeholder="P / M / D أو نسبة %">
+      <label>إدارة المشاريع</label>
+      <input type="text" id="s3" placeholder="P / M / D أو نسبة %">
+      <label>مقدمة في الذكاء الاصطناعي</label>
+      <input type="text" id="s4" placeholder="P / M / D أو نسبة %">
+      <button onclick="calculateSecond()">احسب معدل السنة الثانية</button>
+      <div id="outputSecond" class="result"></div>
+    </div>
+
+    <!-- المواد المشتركة -->
+    <div class="card">
+      <h2>📙 المواد المشتركة (30 درجة)</h2>
+      <label>اللغة الإنجليزية</label>
+      <input type="text" id="c1" placeholder="P / M / D أو نسبة %">
+      <label>اللغة العربية</label>
+      <input type="text" id="c2" placeholder="P / M / D أو نسبة %">
+      <label>تاريخ الأردن</label>
+      <input type="text" id="c3" placeholder="P / M / D أو نسبة %">
+      <label>التربية الإسلامية</label>
+      <input type="text" id="c4" placeholder="P / M / D أو نسبة %">
+      <button onclick="calculateCommon()">احسب معدل المواد المشتركة</button>
+      <div id="outputCommon" class="result"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 جميع الحقوق محفوظة - زين الشلالفه 🚀</p>
+  </footer>
+</body>
+</html>
